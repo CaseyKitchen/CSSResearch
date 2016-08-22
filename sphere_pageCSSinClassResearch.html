@@ -36,19 +36,25 @@
 		html {
 			font: 90%/1.3 arial,sans-serif;
 			padding:1em;
-			background:#4d4d00;
+			background: rgba(24, 178, 173, 0.4);
 			margin:0; 
 			padding:0;
 		}
 			
 		form {
-			background:#b3b300;
+			background: rgba(71, 171, 179, 0.59);
 			padding:1em;
-			border:5px solid #ff66d9;
+			border:5px solid #000000;
 			margin:1em;
 			width:42em;
 		}
-		
+
+        body {
+
+            background-image: url("http://www.saturdayeveningpost.com/wp-content/uploads/satevepost/gun-america.jpg");
+            background-color: #cccccc;
+        }
+
 		/*Group A-B; fieldset
 			1. Research what the various values for the 
 				padding property (i.e. 0, 0.5em, etc.) give us.
@@ -65,7 +71,7 @@
 				showing the effects of changing these.
 		*/
 		fieldset{
-			border:3px solid #ff66d9;
+			border:3px solid rgba(0, 36, 72, 0.38);
 			padding:0 0.5em 0.5em;
 			margin-left: 2px;
 			margin-right: 2px;
@@ -109,8 +115,8 @@
 		input {
 			padding:0.15em;
 			width:10em;
-			border:5px solid #66004d;
-			background:#fafafa;
+			border:5px solid #000000;
+			background: #ffffff;
 			font:bold 1em arial, sans-serif;
 			/*Firefox 1-3.6:*/
 			-moz-border-radius:0.4em;
@@ -118,7 +124,7 @@
 			-khtml-border-radius:0.4em;
 			display:block;
 			float:left;
-			color:#29a329;
+			color: #000000;
 		}
 		/*END Group D*/
 
@@ -136,7 +142,7 @@
 			background:#f6f6f6;
 		}
 		input.readonly {
-			border-color:#ff66d9;
+			border-color: #02afb7;
 			background:#fafafa;
 		}
 		/*END Group E*/
@@ -155,7 +161,7 @@
 			5. Be prepared to share your findings with the class.
 		*/
 		#submit, .sbmt{
-			border-color:#ff66d9;
+			border-color: rgba(0, 0, 0, 0.28);
 			background:#f6f6f6;
 			margin:0em;
 			width:11em;
@@ -170,7 +176,7 @@
 		#submit:hover, .sbmt:hover {
 			/*background-position:0 -26px;*/
 			border-color:#5c5c5c;
-			background:#6f6f6f;
+			background: #ffffff;
 			border:1;
 		}
  
@@ -187,16 +193,16 @@
 			5. Be prepared to share your findings with the class.
 		*/
 		h2	{
-			background:#ff66d9;
+			background: rgba(255, 255, 255, 0);
 		}
 		h3	{
-			background:#b3b300;
+			background: rgba(33, 255, 250, 0);
 		}
 
 		img.shape {			
 			float:right;
-			width:100px;
-			height:100px;
+			width:150px;
+			height:150px;
 		}
 				
 		/*END Group G*/
@@ -212,10 +218,14 @@
 		  >
 		  <fieldset>
             <h3>Spheres:</h3>
-			<img src="img/PurpleSphere.jpg" class="shape">
+			<img src="https://openclipart.org/image/2400px/svg_to_png/178569/kulicka1.png" class="shape">
             <table>
                 <tr>
-                    <td><label for="sphereRadius">Radius:</label></td>
+                    <td>
+                        <b>
+                        <label for="sphereRadius"
+                                b="100px"
+                    >Radius:</label></td>
                     <td><input type="text"
                                id="sphereRadius"
                                name="sphereRadius"
@@ -223,7 +233,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="sphereVolume">Volume:</label></td>
+                    <td>
+                        <b>
+                        <label for="sphereVolume">Volume:</label></td>
                     <td><input type="text"
                                id="sphereVolume"
                                name="sphereVolume"
@@ -231,11 +243,14 @@
                                readonly>
                     </td>
 					<td>
+                        <b>
 						V&nbsp;=&nbsp;4&#8260;3&nbsp;&Pi;&nbsp;r<sup>3</sup>
 					</td>
                 </tr>
                 <tr>
-                    <td><label for="sphereArea">Surface Area:</label></td>
+                    <td>
+                        <b>
+                        <label for="sphereArea">Surface Area:</label></td>
                     <td><input type="text"
                                id="sphereArea"
                                name="sphereArea"
@@ -243,6 +258,7 @@
                                readonly>
                     </td>
 					<td>
+                        <b>
 						A&nbsp;=&nbsp;4&nbsp;&Pi;&nbsp;r&nbsp;<sup>2</sup>
 					</td>
                 </tr>
@@ -263,11 +279,14 @@
           id="coneForm">
         <!--This is for cones:-->
         <fieldset>
+
             <h3>Cones:</h3>
-            <img src="img/PurpleCone.jpg" class="shape">
+            <img src="http://www.awesomeinventions.com/wp-content/uploads/2012/11/pizza-cone-maker-250x210.jpg" class="shape">
             <table>
                 <tr>
-                    <td><label for="coneRadius">Radius:</label></td>
+                    <td>
+                        <b>
+                        <label for="coneRadius">Radius:</label></td>
                     <td><input type="text"
                                id="coneRadius"
                                name="coneRadius"
@@ -275,7 +294,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="coneHeight">Height:</label></td>
+                    <td>
+                        <b>
+                        <label for="coneHeight">Height:</label></td>
                     <td><input type="text"
                                id="coneHeight"
                                name="coneHeight"
@@ -283,7 +304,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="coneVolume">Volume:</label></td>
+                    <td>
+                        <b>
+                        <label for="coneVolume">Volume:</label></td>
                     <td><input type="text"
                                id="coneVolume"
                                name="coneVolume"
@@ -291,11 +314,14 @@
                                readonly>
                     </td>
 					<td>
+                        <b>
 						V&nbsp;=&nbsp;1&#8260;3&nbsp;&Pi;&nbsp;r<sup>2</sup>&nbsp;h
 					</td>
                 </tr>
                 <tr>
-                    <td><label for="coneArea">Surface Area:</label></td>
+                    <td>
+                        <b>
+                        <label for="coneArea">Surface Area:</label></td>
                     <td><input type="text"
                                id="coneArea"
                                name="coneArea"
@@ -305,7 +331,9 @@
 					<td>
 						<table style="font-family:verdana;">
 						  <tr>
-							<td>A&nbsp;=&nbsp;&Pi;&nbsp;r&nbsp;(r&nbsp;+
+							<td>
+                                <b>
+                                A&nbsp;=&nbsp;&Pi;&nbsp;r&nbsp;(r&nbsp;+
 							&radic;<span style="text-decoration:overline">
 							h<span style="font-size: 10px;vertical-align:+25%;">2</span>+
 							r<span style="font-size: 10px;vertical-align:+25%;">2</span></span>)
@@ -331,11 +359,13 @@
           id="cylForm">
         <!--This is for cylinders:-->
         <fieldset>
+            <img src="http://www.precisionballs.com/solid_works/JPEG/cylinder-1.gif" class="shape">
             <h3>Cylinders:</h3>
-            <img src="img/PurpleCylinder.gif" class="shape">
             <table>
                 <tr>
-                    <td><label for="cylRadius">Radius:</label></td>
+                    <td>
+                        <b>
+                        <label for="cylRadius">Radius:</label></td>
                     <td><input type="text"
                                id="cylRadius"
                                name="cylRadius"
@@ -343,7 +373,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="cylHeight">Height:</label></td>
+                    <td>
+                        <b>
+                        <label for="cylHeight">Height:</label></td>
                     <td><input type="text"
                                id="cylHeight"
                                name="cylHeight"
@@ -351,7 +383,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="cylVolume">Volume:</label></td>
+                    <td>
+                        <b>
+                        <label for="cylVolume">Volume:</label></td>
                     <td><input type="text"
                                id="cylVolume"
                                name="cylVolume"
@@ -359,11 +393,14 @@
                                readonly>
                     </td>
 					<td>
+                        <b>
 						V&nbsp;=&nbsp;&Pi;&nbsp;r<sup>2</sup>&nbsp;h
 					</td>
                 </tr>
                 <tr>
-                    <td><label for="cylArea">Surface Area:</label></td>
+                    <td>
+                        <b>
+                        <label for="cylArea">Surface Area:</label></td>
                     <td><input type="text"
                                id="cylArea"
                                name="cylArea"
@@ -371,6 +408,7 @@
 							   readonly>
                     </td>
 					<td>
+                        <b>
 						A&nbsp;=&nbsp;2&nbsp;&Pi;&nbsp;r<sup>2</sup>&nbsp;+&nbsp;2&nbsp;&Pi;&nbsp;r&nbsp;h
 					</td>
                 </tr>
