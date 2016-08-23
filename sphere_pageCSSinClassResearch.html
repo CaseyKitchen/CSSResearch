@@ -42,7 +42,7 @@
 		}
 			
 		form {
-			background: rgba(71, 171, 179, 0.59);
+			background: rgb(24, 178, 173);
 			padding:1em;
 			border:5px solid #000000;
 			margin:1em;
@@ -51,7 +51,7 @@
 
         body {
 
-            background-image: url("http://www.saturdayeveningpost.com/wp-content/uploads/satevepost/gun-america.jpg");
+            background-image: url("http://www.renierdutoit.com/images/ConeCylinderSphere.jpg");
             background-color: #cccccc;
         }
 
@@ -71,7 +71,7 @@
 				showing the effects of changing these.
 		*/
 		fieldset{
-			border:3px solid rgba(0, 36, 72, 0.38);
+			border:3px solid rgb(0, 0, 0);
 			padding:0 0.5em 0.5em;
 			margin-left: 2px;
 			margin-right: 2px;
@@ -142,7 +142,7 @@
 			background:#f6f6f6;
 		}
 		input.readonly {
-			border-color: #02afb7;
+			border-color: #65b5ff;
 			background:#fafafa;
 		}
 		/*END Group E*/
@@ -192,9 +192,15 @@
 				if anything.
 			5. Be prepared to share your findings with the class.
 		*/
-		h2	{
-			background: rgba(255, 255, 255, 0);
-		}
+        h2:after, h2:before {
+            content:"\A";
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background: #b8028a;
+            display:inline-block; /* Put values in the h2.after and h2.before, and the result is dots in the subheader.*/
+        }
+
 		h3	{
 			background: rgba(33, 255, 250, 0);
 		}
@@ -213,6 +219,7 @@
 <body>
 	<h2>3-D Shape Calculator</h2>
 	<h3>Enter details below to calculate metrics for various shapes:</h3>
+    <div align="center">
     <form method="get"
           id="sphereForm"
 		  >
@@ -281,7 +288,7 @@
         <fieldset>
 
             <h3>Cones:</h3>
-            <img src="http://www.awesomeinventions.com/wp-content/uploads/2012/11/pizza-cone-maker-250x210.jpg" class="shape">
+            <img src="http://cliparts.co/cliparts/kT8/5E6/kT85E67yc.jpg" class="shape">
             <table>
                 <tr>
                     <td>
@@ -423,6 +430,7 @@
                 </tr>
             </table>
         </fieldset>
-    </form>	
+    </form>
+    </div>
 </body>
 </html>
